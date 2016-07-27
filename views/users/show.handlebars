@@ -1,0 +1,23 @@
+<!-- userAndYogis.1.username goes to the first item in the array -->
+
+<h1>{{userAndYogis.0.username}}'s Profile</h1>
+
+<p>id in system: {{userAndYogis.0.id}}</p>
+<p>Email: {{userAndYogis.0.email}}</p>
+
+<h2>Yogis that {{userAndYogis.0.username}} owns</h2>
+
+<ul>
+  {{#each userAndYogis}}
+    <li>
+      <p>Yogi's name: {{name}}</p>
+      <p>Is this user a yogi?
+        {{#if isyogi}}
+          yes
+        {{else}}
+          no
+        {{/if}}
+      </p>
+    </li>
+  {{/each}}
+</ul>

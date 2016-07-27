@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WJ Create Yoga Sequences</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+
+<!-- Bootstrap Core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- <! Custom CSS --> 
+    <link href="../assets/css/business-casual.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+<!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+        body {
+        color: #666666;
+        background-image: url("../assets/images/RainbowMountain.jpg");
+        background-position: center;
+        font-family: Georgia, Times, serif;
+        line-height: 1.4em;
+        margin: 0px;}
+        .nav-header {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        background:  url(../assets/images/zen_yoga.jpg) no-repeat top left;
+        }
+
+    </style>
+
+<!-- Javascript -->
+    <script type="text/javascript">
+
+//Get Yoga Intro videos
+function getYogaVideo()
+{
+  var introYogaSeq = ['https://www.youtube.com/embed/l9dW5Nn8XjU', 'https://www.youtube.com/embed/C6XoYAVLKkM', 'https://www.youtube.com/embed/JmW6Ofblhtk', 'https://www.youtube.com/embed/mIz8uc9eTo4']; 
+
+  for (i=0; i < introYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose').value == i)
+         {
+
+         document.getElementById('displayVideo').innerHTML = '<iframe width="560" height="315" src="'+introYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+
+//Get Standing Yoga Sequence Videos
+function getStandingYogaVideo()
+{
+  var standingYogaSeq = ['https://www.youtube.com/embed/WSgL6hbBYKc', 'https://www.youtube.com/embed/uQMpU8CPJYw', 'https://www.youtube.com/embed/-GpUYCuBxNo'];
+
+  for (i=0; i < standingYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose1').value == i)
+         {
+         document.getElementById('displayVideo1').innerHTML = '<iframe width="560" height="315" src="'+standingYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+//Get Core Yoga Pose Videos
+function getCoreYogaVideo()
+{
+  var coreYogaSeq = ['https://www.youtube.com/embed/ptQL97qvL9E','https://www.youtube.com/embed/J3C23D1Jsw0','https://www.youtube.com/embed/TSsN6PBauPk','https://www.youtube.com/embed/VUoXdvODhws'];
+
+  for (i=0; i < coreYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose2').value == i)
+         {
+         document.getElementById('displayVideo2').innerHTML = '<iframe width="560" height="315" src="'+coreYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+//Get Back Pain Yoga Sequence Videos
+function getbackPainYogaVideo()
+{
+  var backPainYogaSeq = ['https://www.youtube.com/embed/SYmNz9XBCL4', 'https://www.youtube.com/embed/YZIVMU1M9jg', 'https://www.youtube.com/embed/Hbpba3F_0z8', 'https://www.youtube.com/embed/v1IkTK16XUQ'];
+
+  for (i=0; i < backPainYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose3').value == i)
+         {
+
+         document.getElementById('displayVideo3').innerHTML = '<iframe width="560" height="315" src="'+backPainYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+
+//Get Sun Salutation Yoga Pose Video
+function getSunSalutationsYogaVideo()
+{
+  var sunSalutationsYogaSeq = ['https://www.youtube.com/embed/y9sxkuSgV6M'];
+
+  for (i=0; i < sunSalutationsYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose4').value == i)
+         {
+         document.getElementById('displayVideo4').innerHTML = '<iframe width="560" height="315" src="'+sunSalutationsYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+
+//Get ther Yoga Video
+function getOtherYogaVideo()
+{
+  var otherYogaSeq = ['https://www.google.com'];
+
+  for (i=0; i < otherYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose5').value == i)
+         {
+         document.getElementById('displayVideo5').innerHTML = '<iframe width="560" height="315" src="'+otherYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+
+</script>
+</head>
+
+<body>
+
+<nav ='top-menu-bar'>
+  <div class='nav-header'><a href="" font="italics"</a></div>
+    <li role="presentation"><a href="">Wellness Journey</a></li>
+    <li role="presentation"><a href="../public/index.html">Home</a></li>
+    <li role="presentation"><a href="../public/about.html">About</a></li>
+    <li role="presentation"><a href="../public/contact.html#">Contact</a></li><br><br><br>
+</div>
+</nav>
+<div class='wj-sub-header'>
+  <header>
+    <h1>Wellness Journey</h1>
+      <center>
+        <a href="../public/yoga_learn_poses.html">Read About Yoga Poses</a>
+        <a href="../public/yoga_create.html">Practice Yoga Poses</a>
+        <a href="../public/yoga_videos.html">Do Yoga Videos</a>
+        <a href="../public/yoga_restore.html">Restore/Rejuvenate</a>
+      </center>
+  </header>
+</div><br><br><br><br><br><br>
+
+<nav class="navbar navbar-transparent">
+  <h2 class="initialHeader"><center>Begin Your Wellness Journey!</h2></center>
+  <h2><center>Choose individual poses to create-your-own Sequence</h2>
+</center>
+</div>
+
+<!-- use a form handler to connect with you tube server via the name attribute-->
+<div>
+  <form id="Demo">
+    <h3>Short 1 to 3 minute videos</h3>
+    <label class="duration" for="radio"></label>
+    <ul class="nav nav-pills nav-stacked">
+<p>Introduction Basic Yoga Sequences</p>
+    <select id="yoga_pose" onChange="getYogaVideo()">
+     <option value="null">Select Pose</option>
+      <option value="0">1. Mountain Pose</option>
+      <option value="1">2. Plank Pose</option>
+      <option value="2">3. Downward Facing Dog Pose</option>
+      <option value="3">4, Child's Pose</option>
+    </select><br><br>
+<div id="displayVideo"></div>
+
+<p>Standing Yoga Sequences</p>
+
+    <select id="yoga_pose1" onChange="getStandingYogaVideo()">
+     <option value="null">Select Pose</option>
+      <option value="0">1. Tree Pose - Vriksasana</option>
+      <option value="1">2. Extended Triangle Pose - Utthita Trikonasana</option>
+      <option value="2">3. Standing Forward Fold Pose</option>
+    </select><br><br>
+<div id="displayVideo1"></div>
+
+
+<p>Core Exercise Sequences</p>
+    <select id="yoga_pose2" onChange="getCoreYogaVideo()">
+     <option value="null">Select Pose</option>
+      <option value="0">1. Warrior I - Virabadrasasa Pose</option>
+      <option value="1">2. Revolved Triangle - Parivrtta Trikonasana Pose</option>
+      <option value="2">3. Hero Pose - Virasana</option>
+      <option value="3">4. Full Boat Pose - Paripurna Navasana</option>
+    </select><br><br>
+<div id="displayVideo2"></div>
+
+<p>Back Pain Sequences</p>
+    <select id="yoga_pose3" onChange="getbackPainYogaVideo()">
+     <option value="null">Select Pose</option>
+      <option value="0">1. Easy Pose with a Twist</option>
+      <option value="1">2. Bent Leg Twist-Marichyasana III</option>
+      <option value="2">3. Bridge Pose - Setu Bandha Sarvangasana</option>
+      <option value="3">4. Corpse Pose</option>
+    </select><br><br>
+<div id="displayVideo3"></div>
+
+<p>Sun Salutations Sequences - Chaturanga Dandasana</p>
+<select id="yoga_pose4" onChange="getSunSalutationsYogaVideo()">
+     <option value="null">Select Pose</option>
+     <option value="0">Upward Facing Dog Pose - Urdha Mukha Svanasana</option>
+    </select><br><br>
+<div id="displayVideo4"></div>
+
+</script>
+</form>
+
+</div>
+</div>
+
+
+</body>
+</html>

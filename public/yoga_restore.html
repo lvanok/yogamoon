@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>WJ Relax Yoga Sequence</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+
+<!-- <! Custom CSS --> 
+    <link href="../assets/css/business-casual.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+<!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<!-- Bootstrap Core CSS -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+    body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('../assets/images/RainbowMountain.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  .nav-header {
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        background:  url(../assets/images/zen_yoga.jpg) no-repeat top left;
+        }
+
+    </style>
+
+
+<!--  Javascript -->
+    <script type="text/javascript">
+
+//Get Yoga Relaxation videos
+function getRelaxationYogaVideo()
+{
+  var relaxationYogaSeq = ['https://www.youtube.com/embed/ti3tbscESUY', "https://www.youtube.com/embed/TV7jjlsWi44", 'https://www.youtube.com/embed/mIz8uc9eTo4', 'https://www.youtube.com/embed/v1IkTK16XUQ']; 
+
+  for (i=0; i < relaxationYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose6').value == i)
+         {
+
+         document.getElementById('displayVideo6').innerHTML = '<iframe width="560" height="315" src="'+relaxationYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+
+</script>
+</head>
+
+<body>
+
+<body>
+<nav = 'top-menu-bar'>
+  <div class='nav-header'><a href="" font="italics"</a></div>
+    <li role="presentation"><a href="">Wellness Journey</a></li>
+    <li role="presentation"><a href="../public/index.html">Home</a></li>
+    <li role="presentation"><a href="../public/about.html">About</a></li>
+    <li role="presentation"><a href="../public/contact.html#">Contact</a></li><br><br><br>
+</div>
+</nav>
+<div class='wj-sub-header'>
+  <header>
+    <h1>Wellness Journey</h1>
+      <center>
+        <a href="../public/yoga_learn_poses.html">Read About Yoga Poses</a>
+        <a href="../public/yoga_create.html">Practice Yoga Poses</a>
+        <a href="../public/yoga_videos.html">Do Yoga Videos</a>
+        <a href="../public/yoga_restore.html">Restore/Rejuvenate</a>
+      </center>
+  </header>
+</div><br><br><br><br><br><br>
+
+
+
+<div class="container-fluid"><center>
+      <h2 class="initialHeader">Complete Your Wellness Journey</h2>
+      <h2 class="youtubeLinks">With Sequences to Restore and Rejuvenate</h2>
+
+<!--   use a form handler to connect with you tube server via the action attribute -->
+      <div id="radioButtons">
+      <form id="Demo">
+          <label id="duration" for="radio"><h4>Follow the sequence to wind down and relax</h4></label>
+          <ul class="nav nav-pills nav-stacked">
+            <p>Relaxation Sequences</p>
+                <select id="yoga_pose6" onChange="getRelaxationYogaVideo()">
+                 <option value="null">Select Pose</option>
+                  <option value="0">1. Bound Angle Pose</option>
+                  <option value="1">2. Head-of-the-knee Pose - Janu Sirsasana</option>
+                  <option value="2">3. Child's Pose</option>
+                  <option value="3">4. Corpse - Shavasana Pose</option>
+                </select><br><br>
+            <div id="displayVideo6"></div>
+
+          </ul>
+      </form>
+      </div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+	color: white !important;
+}
+
+<style type="text/css">
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;}
+
+
+			/*main section*/
+			#main-container {
+				padding-top: 130px;
+			}
+			.main-section {
+				background: inherit;
+				padding: 30px;
+				margin: 0 0 40px 0;
+				width: 100%;
+				max-width: 650px;
+				float: left;
+				border: 1px solid #ddd;
+			}
+			/*contact page*/
+
+			#contact-form ul {
+				margin-bottom: 20px;
+			}
+			#contact-form li {
+				margin-bottom: 10px;
+			}
+			label,
+			input[type=text],
+			input[type=email],
+			textarea {
+				display: block;
+				width: 100%;
+				background: inherit;
+			}
+			input[type=text],
+			input[type=email],
+			textarea {
+				height: 35px;
+				border: 1px solid #ddd;
+				padding: 0 10px;
+				font-size: 14px;
+			}
+			textarea {
+				height: 200px;
+			}
+			input[type=submit] {
+				background: inherit;
+				border: 0 none;
+				color: #fff;
+				font-size: 18px;
+				padding: 10px 30px;
+				cursor: pointer;
+			}
+
+			/*sidebar*/
+
+			.sidebar {
+				background: #455467;
+				padding: 5px;
+				width: 100%;
+				max-width: 2000px;
+				float: right;
+				border: 1px solid #ddd;
+				margin-bottom: 20px;
+			}
+			h3,
+			.sidebar h2 {
+				border-bottom: 2px solid #eee;
+				padding-bottom: 20px;
+				margin-bottom: 15px;
+				line-height: 22px;
+			}
+			.social {
+				width: 62px;
+				height: 62px;
+				margin-top: 8px;
+				margin-right: 5px;
+			}
+			.social:last-child {
+				margin-right: 0;
+			}
+
+
+/* */
+			header {
+				height: 50px;
+				width: 50;
+				padding-left: 20px;
+				background:  url(assets/images/zen_yoga_symbol.jpg) no-repeat top left;
+				}
+
+
+
+
+li {
+  background: skyblue;
+  width: 10%;
+  margin: 15px;
+  padding: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  background: aqua;
+  margin: 5px;
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}

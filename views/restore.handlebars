@@ -1,0 +1,47 @@
+</style>
+
+<!--  Javascript -->
+    <script type="text/javascript">
+
+//Get Yoga Relaxation videos
+function getRelaxationYogaVideo()
+{
+  var relaxationYogaSeq = ['https://www.youtube.com/embed/ti3tbscESUY', "https://www.youtube.com/embed/TV7jjlsWi44", 'https://www.youtube.com/embed/mIz8uc9eTo4', 'https://www.youtube.com/embed/v1IkTK16XUQ']; 
+
+  for (i=0; i < relaxationYogaSeq.length; i++)
+  {       if (document.getElementById('yoga_pose6').value == i)
+         {
+
+         document.getElementById('displayVideo6').innerHTML = '<iframe width="560" height="315" src="'+relaxationYogaSeq[i]+'" frameborder="0" allowfullscreen></iframe>';
+          } // if 
+    }// for loop
+}// function
+
+</script>
+</head>
+
+<body>
+
+<div class="container-fluid"><center>
+      <h2 class="initialHeader">Complete Your Wellness Journey</h2>
+      <h2 class="youtubeLinks">With Sequences to Restore and Rejuvenate</h2>
+
+<!--   use a form handler to connect with you tube server via the action attribute -->
+      <div id="radioButtons">
+      <form id="Demo">
+          <label id="duration" for="radio"><h4>Follow the sequence to wind down and relax</h4></label>
+          <ul class="nav nav-pills nav-stacked">
+            <p>Relaxation Sequences</p>
+                <select id="yoga_pose6" onChange="getRelaxationYogaVideo()">
+                 <option value="null">Select Pose</option>
+                  <option value="0">1. Bound Angle Pose</option>
+                  <option value="1">2. Head-of-the-knee Pose - Janu Sirsasana</option>
+                  <option value="2">3. Child's Pose</option>
+                  <option value="3">4. Corpse - Shavasana Pose</option>
+                </select><br><br>
+            <div id="displayVideo6"></div>
+          </ul>
+      </form>
+    </div>
+</div> <!-- //container-fluid -->
+</body>
